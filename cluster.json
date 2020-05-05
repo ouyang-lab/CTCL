@@ -1,0 +1,21 @@
+{
+    "__default__":
+    {
+        "time": "24:00:00",
+        "nodes": 1,
+        "cpu": 1,
+        "mem": "16g",
+        "email": "ycheng@uchc.edu",
+        "email_notice": "FAIL",
+        "log_out": "logs/log.out",
+        "log_err": "logs/log.err",
+        "queue": "general",
+        "name": "{rule}"
+    },
+    
+    "cellranger_10x_pipeline": {"time": "48:00:00", "cpu": 8, "mem": "128g"},
+    "cellranger_10x_featurecount_pipeline": {"time": "72:00:00", "cpu": 8, "mem": "128g"},
+    "cellranger_10x_TCR_pipeline": {"time": "48:00:00", "cpu": 8, "mem": "128g"},
+    "count_HTO_or_ADT": {"mem": "32g"},
+    "create_seurat_objects": {"mem": "128g"}
+}
